@@ -1,0 +1,13 @@
+[Unit]
+Description=Launch scrcpy when my phone is connected
+After=${SYSTEMD_DEV}
+BindsTo=${SYSTEMD_DEV}
+Requisite=${SYSTEMD_DEV}
+
+[Service]
+Type=oneshot
+StandardOutput=journal
+ExecStart=%h/bin/auto-scrcpy
+
+[Install]
+WantedBy=${SYSTEMD_DEV}

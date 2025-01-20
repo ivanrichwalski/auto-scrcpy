@@ -1,0 +1,12 @@
+#!/usr/bin/bash +x
+# Launch scrcpy when my phone is connected to usb
+
+
+echo "======================================="
+export
+echo "======================================="
+${PROGDIR}/scrcpy -w --kill-adb-on-close
+
+echo "scrcpy exit, return status: $?"
+
+exit 0

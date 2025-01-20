@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Android Screen Copy
+Comment=Display and control your Android device
+Exec=${PROGDIR}/scrcpy -w
+Icon=${PROGDIR}/icon.png
+Terminal=false
+Type=Application
+Categories=Utility
